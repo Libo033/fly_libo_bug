@@ -10,6 +10,13 @@ export interface IFlySelect {
   origin: string[];
 }
 
+export interface IOpenDrawer {
+  handleLogOut: Function;
+  loaded: boolean;
+  user: User | null;
+}
+
+
 export interface IFly {
   availability: number;
   data: string;

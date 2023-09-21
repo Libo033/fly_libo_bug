@@ -2,7 +2,7 @@ import Image from "next/image";
 import React, { useContext, useState } from "react";
 import styles from "@/styles/Components.module.css";
 import Link from "next/link";
-import { AuthContext } from "@/context/AuthContext";
+import { AuthContext } from "@/Context/AuthContext";
 import { NextRouter, useRouter } from "next/router";
 import { Drawer } from "@mui/material";
 import OpenDrawer from "./OpenDrawer";

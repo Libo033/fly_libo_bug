@@ -1,3 +1,4 @@
+import { User } from "firebase/auth";
 import React, { SetStateAction } from "react";
 
 export interface IFly {
@@ -15,4 +16,12 @@ export interface IFlyContext {
   setOriginTicket: React.Dispatch<SetStateAction<IFly | null>> | null;
   setDestinationTicket: React.Dispatch<SetStateAction<IFly | null>> | null;
   setPassengers: React.Dispatch<SetStateAction<number | null>> | null;
+}
+
+export interface IAuthContext {
+  user: User | null;
+  googleSignIn: Function | null;
+  facebookSignIn: Function | null;
+  logOut: Function | null;
+  loaded: boolean;
 }

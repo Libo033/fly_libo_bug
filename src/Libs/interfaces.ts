@@ -1,6 +1,23 @@
 import { User } from "firebase/auth";
 import React, { SetStateAction } from "react";
 
+export interface ILayout {
+  children: React.ReactNode;
+}
+
+export interface IFlySelect {
+  destination: string[];
+  origin: string[];
+}
+
+export interface IFly {
+  availability: number;
+  data: string;
+  destination: string;
+  origin: string;
+  price: number;
+}
+
 export interface IFly {
   availability: number;
   data: string;

@@ -1,0 +1,1165 @@
+/*#region LOGIN_GROUP */
+.loginGroup {
+  padding: 12% 9%;
+  display: flex;
+  flex-direction: column;
+  gap: 21px;
+}
+
+.loginGroup_button {
+  transition: 120ms ease-in-out;
+  width: 100%;
+  background-color: white;
+  border: 1px solid gray;
+  border-radius: 9px;
+  padding-block: 15px;
+  font-size: 1.2em;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 9px;
+  cursor: pointer;
+}
+
+.loginGroup_button:hover {
+  transition: 120ms ease-in-out;
+  box-shadow: 0px 0px 1px 3px #80808045;
+}
+/*#endregion */
+
+/*#region NAVIGATION_BAR */
+.NavigationBar {
+  background-color: white;
+  height: 10vh;
+  max-width: 1536px;
+  min-width: 210px;
+  margin-left: auto;
+  margin-right: auto;
+  display: flex;
+  justify-content: space-between;
+  position: relative;
+}
+
+.NavigationBar_menu {
+  position: absolute;
+  display: none;
+}
+
+.NavigationBar_logoUl {
+  width: 54%;
+  height: 100%;
+  display: flex;
+  gap: 15px;
+}
+
+.NavigationBar_logoLi {
+  width: 33%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.NavigationBar_logo {
+  width: 99px;
+  height: auto;
+  cursor: pointer;
+}
+
+.NavigationBar_linksUl {
+  list-style: none;
+  display: flex;
+  align-items: center;
+  gap: 30px;
+}
+
+.NavigationBar_link {
+  color: black;
+  text-decoration: none;
+  position: relative;
+}
+
+.NavigationBar_link::before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 2px;
+  border-radius: 4px;
+  background-color: #00a6ff;
+  bottom: 0;
+  left: 0;
+  transform-origin: right;
+  transform: scaleX(0);
+  transition: transform 0.3s ease-in-out;
+}
+
+.NavigationBar_link:hover::before {
+  transform-origin: left;
+  transform: scaleX(1);
+}
+
+.NavigationBar_sesion {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-inline: 6%;
+}
+
+.NavigationBar_sesionButton {
+  border: none;
+  background-color: transparent;
+  right: 0;
+  font-size: 0.9em;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.NavigationBar_initSesionButton {
+  border-radius: 3px;
+  box-shadow: inset 0 0 0 0 #00a6ff;
+  color: #00a6ff;
+  padding: 0 0.3rem;
+  margin: 0 -0.25rem;
+  transition: color 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+  color: #121212;
+  font-size: 21px;
+  font-weight: 700;
+  line-height: 1.5;
+  text-decoration: none;
+  letter-spacing: 1px;
+}
+
+.NavigationBar_initSesionButton:hover {
+  color: #fff;
+  box-shadow: inset 200px 0 0 0 #00a6ff;
+}
+/*#endregion */
+
+/*#region OPEN_DRAWER */
+.openDrawer {
+  display: none;
+}
+/*#endregion */
+
+/*#region LOW_PRICES */
+.lowPrices {
+  margin-bottom: 3rem;
+  padding-top: 3rem;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.lowPrices_Content {
+  width: 81%;
+  display: flex;
+  flex-direction: column;
+}
+
+.lowPrices_Content1 {
+  margin-block: 1rem;
+}
+
+.lowPrices_Content1 h2 {
+  text-align: center;
+}
+
+.lowPrices_Content2 {
+  margin-block: 1rem;
+}
+
+.lowPrices_Content2 p {
+  padding-inline: 20%;
+  text-align: center;
+}
+
+.lowPrices_section {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.lowPrices_article {
+  margin-block: 1rem;
+  width: 30%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.lowPrices_articleImg {
+  width: 222px;
+  height: auto;
+}
+
+.lowPrices_articleTitle {
+  text-align: center;
+  font-weight: 600;
+  margin-bottom: 0.9rem;
+}
+
+.lowPrices_articleText {
+  text-align: center;
+  font-weight: 400;
+  font-size: 0.9em;
+  color: gray;
+}
+/*#endregion */
+
+/*#region FOOTER */
+.footer {
+  margin-left: auto;
+  margin-right: auto;
+  padding-top: 1rem;
+  background-color: #151515;
+  max-width: 1536px;
+  min-width: 210px;
+  display: flex;
+  flex-direction: column;
+  padding-inline: 3%;
+}
+
+.footer_social {
+  height: 12vh;
+  list-style: none;
+  display: flex;
+  gap: 30px;
+}
+
+.footer_logoContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.footer_logo {
+  transition: 150ms ease-in-out;
+  filter: invert(100%);
+  cursor: pointer;
+}
+
+.footer_logo:hover {
+  transition: 150ms ease-in-out;
+  filter: invert(60%);
+}
+
+.footer_bottom {
+  border-top: 1px solid gainsboro;
+  height: 10vh;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.footer_txt {
+  font-size: 0.81em;
+  color: gainsboro;
+}
+
+.footer_flylibo {
+  width: 120px;
+  height: auto;
+  filter: invert(100%);
+}
+/*#endregion */
+
+/*#region NEWS_LETTER */
+.newsLetterContent {
+  position: relative;
+  background-color: #fafafa;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.newsLetter_title {
+  margin-block: 1.5rem;
+  font-size: 1.8em;
+  font-weight: 600;
+}
+
+.newsLetter_text {
+  color: #151515;
+  font-size: 1em;
+  font-weight: 300;
+  margin: 0 0 1rem 0;
+}
+
+.newsLetter_inputContainer {
+  width: 100%;
+  margin: 1rem 0 3rem 0;
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+}
+
+.newsLetter_input {
+  width: 33%;
+  border: 1px solid gainsboro;
+  height: 42px;
+  font-size: 0.99em;
+  padding-inline: 6px;
+  border-radius: 3px;
+  outline: none;
+}
+
+.newsLetter_button {
+  transition: 120ms ease-in-out 0s;
+  border-radius: 6px;
+  border: 1px solid gray;
+  padding-inline: 1.8rem;
+  font-size: 1em;
+  font-weight: 500;
+  background-color: #00a6ff;
+  color: white;
+  cursor: pointer;
+}
+
+.newsLetter_button:disabled {
+  background-color: whitesmoke;
+  color: gray;
+  border: 1px solid gainsboro;
+  cursor: default;
+}
+
+.newsLetter_button:disabled:hover {
+  border-radius: 6px;
+}
+
+.newsLetter_button:hover {
+  transition: 120ms ease-in-out 0s;
+  border-radius: 21px;
+}
+
+.newsLetterReceived {
+  position: relative;
+  margin-top: 3rem;
+  padding-block: 1.5rem;
+  background-color: #fafafa;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 36px;
+}
+
+.newsLetter_cross {
+  position: absolute;
+  right: 0;
+  top: 0;
+  margin: 21px;
+  cursor: pointer;
+  filter: opacity(45%);
+}
+/*#endregion */
+
+/*#region FLY_SELECT */
+.flySelect {
+  position: relative;
+  height: fit-content;
+  display: flex;
+  align-items: flex-end;
+  padding-top: 400px;
+  justify-content: center;
+  margin-bottom: 3rem;
+}
+
+.flySelect_imgBackground {
+  position: absolute;
+  width: 100%;
+  height: 500px;
+  object-fit: cover;
+  z-index: -999;
+  top: 0;
+}
+
+.flySelect_form {
+  box-shadow: 1px 1px 9px #aaaaaa;
+  height: 18vh;
+  background-color: #f0f8ff;
+  border-radius: 9px;
+  width: 90%;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.flySelect_container {
+  width: 24%;
+  display: flex;
+  flex-direction: column;
+}
+
+.flySelect_label {
+  font-weight: 600;
+  font-size: 0.9em;
+  color: #454545;
+}
+
+.flySelect_selectTakeOff {
+  border: 1px solid gainsboro;
+  height: 32px;
+  padding-left: 36px;
+  outline: none;
+  background-image: url("/img/takeoff.svg");
+  background-repeat: no-repeat;
+  background-position: left 6px center;
+  background-size: 27px;
+}
+
+.flySelect_selectTakeOff:focus {
+  border: 2px solid #00a6ff;
+}
+
+.flySelect_selectLanding {
+  border: 1px solid gainsboro;
+  height: 32px;
+  padding-left: 36px;
+  outline: none;
+  background-image: url("/img/landing.svg");
+  background-repeat: no-repeat;
+  background-position: left 6px center;
+  background-size: 27px;
+}
+
+.flySelect_selectLanding:focus {
+  border: 2px solid #00a6ff;
+}
+
+.flySelect_inputN {
+  border: 1px solid gainsboro;
+  height: 32px;
+  outline: none;
+  padding-inline: 3px;
+}
+
+.flySelect_inputN:focus {
+  border: 2px solid #00a6ff;
+}
+
+.flySelect_button {
+  transition: 120ms ease-in-out 0s;
+  width: 15%;
+  height: 50px;
+  border: none;
+  border-radius: 15px;
+  background-color: #00a6ff;
+  color: #fff;
+  font-size: 18px;
+  cursor: pointer;
+}
+
+.flySelect_button:hover {
+  transition: 120ms ease-in-out 0s;
+  transform: translateY(-1px);
+  box-shadow: 2px 4px #454545;
+}
+/*#endregion */
+
+/*#region RESERVA */
+.reserva {
+  padding-inline: 3%;
+  margin-bottom: 3.3rem;
+  display: flex;
+  flex-direction: column;
+}
+
+.reserva_title {
+  width: 100%;
+  font-size: 1.8em;
+  font-weight: 300;
+  margin-block: 1.5rem;
+}
+
+.reserva_section {
+  display: flex;
+  justify-content: space-between;
+}
+
+.reserva_article {
+  width: 30%;
+}
+
+.reserva_articleImage {
+  width: 100%;
+  height: 240px;
+  object-fit: cover;
+  border-radius: 6px;
+}
+
+.reserva_articleTitle {
+  color: #0071ad;
+  font-size: 1.44em;
+  font-weight: 300;
+  padding-block: 0.9rem;
+}
+
+.reserva_articleText {
+  text-align: justify;
+  padding: 0 0 0.6rem 0;
+}
+/*#endregion */
+
+/*#region EXTRAS */
+.extras {
+  padding-inline: 3%;
+  margin-block: 2.4rem;
+  display: flex;
+  flex-direction: column;
+}
+
+.extras_title {
+  margin-bottom: 0.9rem;
+  font-size: 2em;
+  font-weight: 600;
+  text-align: center;
+  letter-spacing: 0.6px;
+}
+
+.extras_section {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.extras_article {
+  width: 24%;
+}
+
+.extras_image {
+  width: 100%;
+  height: auto;
+}
+
+.extras_artTitle {
+  font-weight: 600;
+  color: #303030;
+  text-align: center;
+  margin-bottom: 0.9rem;
+}
+
+.extras_artText {
+  color: gray;
+  font-size: 0.99em;
+  text-align: center;
+}
+/*#endregion */
+
+/*#region CUATRO_DESTINOS */
+.cuatroDestinos {
+  height: fit-content;
+  width: 100%;
+  padding-inline: 1.5%;
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 3.3rem;
+}
+
+.cuatroDestinos_title {
+  margin-top: 3rem;
+  padding-inline: 1.5%;
+  font-size: 2.1em;
+  font-weight: 500;
+  margin-bottom: 0.9rem;
+  text-align: center;
+}
+
+.cuatroDestinos_art {
+  width: 24%;
+  position: relative;
+}
+
+.cuatroDestinos_artImage {
+  width: 100%;
+  height: 420px;
+  object-fit: cover;
+  border-radius: 15px;
+  border: 1px solid gainsboro;
+}
+
+.cuatroDestinos_artText {
+  position: absolute;
+  font-size: 2.4em;
+  font-weight: 600;
+  bottom: 21px;
+  left: 9px;
+  color: white;
+  -webkit-text-stroke: 2px #121212;
+  cursor: default;
+}
+/*#endregion */
+
+/*#region TABLE_FLY */
+.tableFly {
+  border-radius: 5px;
+  font-size: 15px;
+  font-weight: normal;
+  border: none;
+  border-collapse: collapse;
+  width: 100%;
+  max-width: 100%;
+  white-space: nowrap;
+  background-color: white;
+}
+
+.tableFly td,
+.tableFly th {
+  text-align: center;
+  padding: 8px;
+}
+
+.tableFly td {
+  border-right: 1px solid #f8f8f8;
+  font-size: 13px;
+}
+
+.tableFly thead th {
+  border-bottom: 1px solid gainsboro;
+  color: gray;
+}
+
+.tableFly tr:nth-child(even) {
+  background: #f8f8f8;
+}
+
+.tableFly_seleccionar {
+  transition: 120ms ease-in-out 0s;
+  height: 24px;
+  width: 27%;
+  background-color: #0071ad;
+  border: none;
+  border-radius: 15px;
+  color: #f8f8f8;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.tableFly_seleccionar:hover {
+  transition: 60ms ease-in-out 0s;
+  width: 30%;
+}
+/*#endregion */
+
+/*#region TICKET */
+.ticket {
+  width: 450px;
+  display: flex;
+  flex-direction: column;
+  border: 3px solid gray;
+  border-radius: 18px;
+}
+
+.ticket_top {
+  width: 100%;
+  height: fit-content;
+  display: flex;
+  border-bottom: 1px solid gray;
+  background-color: #00a6ff;
+  border-radius: 15px 15px 0px 0px;
+}
+
+.ticket_logo {
+  width: 111px;
+  height: auto;
+  margin-block: 9px;
+  margin-inline: 27px;
+  filter: invert(99%);
+}
+
+.ticket_bottom {
+  display: flex;
+  justify-content: space-between;
+  padding: 9px 21px;
+  background-color: #00a6ff;
+  border-radius: 0px 0px 15px 15px;
+}
+
+.ticket_bottom p {
+  font-weight: 600;
+  font-size: 15px;
+}
+
+.ticket_info {
+  display: flex;
+  justify-content: space-evenly;
+  margin-block: 12px;
+}
+
+.ticket_or {
+  margin-block: 18px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.ticket_mid {
+  position: relative;
+}
+
+.ticket_midBackground {
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
+  width: 60%;
+  height: fit-content;
+  position: absolute;
+  filter: opacity(9%);
+  object-fit: cover;
+}
+
+.ticket_or p {
+  width: 210px;
+  padding-inline: 36px;
+  font-size: 18px;
+  font-weight: 600;
+  color: #303030;
+}
+
+.ticket_boarding {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-block: 9px;
+}
+
+.ticket_boardingTime {
+  font-weight: 600;
+  color: #515151;
+}
+/*#endregion */
+
+/*#region COMPRAR_MINI_TICKET */
+.ComprarMiniTicket {
+  margin-block: 3rem;
+}
+
+.ComprarMiniTicket_title {
+  font-size: 21px;
+  font-weight: 600;
+  color: #303030;
+  margin-bottom: 9px;
+}
+
+.ComprarMiniTicket_total {
+  margin-top: 6px;
+  font-weight: 500;
+}
+/*#endregion */
+
+@media (min-width: 1921px) {
+  /*#region NAVIGATION_BAR */
+  .NavigationBar_logo {
+    width: 120px;
+  }
+  /*#endregion */
+}
+
+@media (min-width: 360px) and (max-width: 950px) and (max-height: 420px) and (orientation: landscape) {
+  /*#region LOGIN_GROUP */
+  .loginGroup {
+    padding: 12% 9% 0% 9%;
+  }
+  /*#endregion */
+
+  /*#region NAVIGATION_BAR */
+  .NavigationBar {
+    height: 18vh;
+  }
+
+  .NavigationBar_logoUl {
+    width: 60%;
+    gap: 12px;
+  }
+
+  .NavigationBar_logoLi {
+    width: 30%;
+  }
+  /*#endregion */
+
+  /*#region FOOTER */
+  .footer_social {
+    height: 18vh;
+  }
+
+  .footer_bottom {
+    height: 18vh;
+  }
+  /*#endregion */
+}
+
+@media (min-width: 768px) and (max-width: 1024px) {
+  /*#region LOW_PRICES */
+  .lowPrices_Content {
+    width: 96%;
+  }
+
+  .lowPrices_Content2 p {
+    padding-inline: 15%;
+  }
+
+  .lowPrices_articleImg {
+    width: 210px;
+  }
+  /*#endregion */
+
+  /*#region FLY_SELECT */
+  .flySelect_form {
+    width: 98%;
+  }
+
+  .flySelect_container {
+    width: 25%;
+  }
+  /*#endregion */
+
+  /*#region RESERVA */
+  .reserva_articleImage {
+    height: 180px;
+  }
+  /*#endregion */
+
+  /*#region CUATRO_DESTINOS */
+  .cuatroDestinos {
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    row-gap: 36px;
+  }
+
+  .cuatroDestinos_art {
+    max-width: 24%;
+    min-width: 270px;
+  }
+  /*#endregion */
+
+  /*#region TABLE_FLY */
+  .tableFly_seleccionar {
+    width: 45%;
+  }
+
+  .tableFly_seleccionar:hover {
+    width: 48%;
+  }
+  /*#endregion */
+}
+
+@media (min-width: 210px) and (max-width: 767px) and (orientation: portrait) {
+  /*#region NAVIGATION_BAR */
+  .NavigationBar_menu {
+    position: absolute;
+    display: block;
+    right: 0;
+    top: calc(50% - 18px);
+    margin-inline: 5%;
+  }
+
+  .NavigationBar_logoUl {
+    width: 100%;
+  }
+
+  .NavigationBar_logoLi {
+    width: 100%;
+  }
+
+  .NavigationBar_linksUl {
+    display: none;
+  }
+
+  .NavigationBar_sesion {
+    display: none;
+  }
+
+  .NavigationBar_sesionButton {
+    display: none;
+  }
+  /*#endregion */
+
+  /*#region OPEN_DRAWER */
+  .openDrawer {
+    width: 63vw;
+    display: flex;
+    flex-direction: column;
+    padding: 15% 6%;
+    list-style: none;
+    gap: 30px;
+  }
+
+  .openDrawer_logoContainer {
+    padding-bottom: 21%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .openDrawer_logo {
+    width: 111px;
+    height: auto;
+  }
+
+  .openDrawer_li {
+    display: flex;
+    justify-content: center;
+  }
+
+  .openDrawer_link {
+    font-size: 1.2em;
+    font-weight: 500;
+    text-decoration: none;
+    color: black;
+  }
+
+  .openDrawer_logOut {
+    display: flex;
+    justify-content: center;
+  }
+
+  .openDrawer_logOutButton {
+    border: none;
+    background-color: transparent;
+    font-size: 1em;
+    font-weight: 600;
+    color: #00a6ff;
+    text-decoration: underline;
+  }
+
+  .openDrawer_logIn {
+    display: flex;
+    justify-content: center;
+    color: #00a6ff;
+  }
+
+  .openDrawer_logInButton {
+    color: #00a6ff;
+    background-color: transparent;
+    font-size: 1em;
+    font-weight: 600;
+  }
+  /*#endregion */
+
+  /*#region LOW_PRICES */
+  .lowPrices {
+    padding-top: 3rem;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+  }
+
+  .lowPrices_Content {
+    width: 96%;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .lowPrices_Content1 h2 {
+    padding-left: 6%;
+    text-align: left;
+  }
+
+  .lowPrices_Content2 p {
+    padding-left: 6%;
+    padding-right: 3%;
+    text-align: left;
+  }
+
+  .lowPrices_section {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .lowPrices_article {
+    width: 96%;
+    flex-direction: row;
+  }
+
+  .lowPrices_articleImg {
+    width: 180px;
+  }
+  /*#endregion */
+
+  /*#region FOOTER */
+  .footer {
+    padding-inline: 4.5%;
+  }
+
+  .footer_social {
+    width: 100%;
+    justify-content: space-evenly;
+    gap: 0;
+  }
+  /*#endregion */
+
+  /*#region NEWS_LETTER */
+  .newsLetter_text {
+    text-align: center;
+    padding-inline: 1%;
+  }
+
+  .newsLetter_inputContainer {
+    gap: 12px;
+  }
+
+  .newsLetter_input {
+    width: 57%;
+  }
+
+  .newsLetterReceived {
+    padding-block: 2.4rem;
+    background-color: #fafafa;
+    gap: 9px;
+  }
+
+  .newsLetter_title {
+    font-size: 1.41em;
+  }
+  /*#endregion */
+
+  /*#region FLY_SELECT */
+  .flySelect {
+    position: relative;
+    height: fit-content;
+    display: flex;
+    align-items: flex-end;
+    padding-top: 400px;
+    justify-content: center;
+    margin-bottom: 3rem;
+  }
+
+  .flySelect_form {
+    height: fit-content;
+    flex-direction: column;
+  }
+
+  .flySelect_container {
+    margin-block: 1.2rem;
+    width: 90%;
+  }
+
+  .flySelect_button {
+    width: 45%;
+    margin: 0.5rem 0 2.1rem 0;
+  }
+  /*#endregion */
+
+  /*#region RESERVA */
+  .reserva_section {
+    flex-direction: column;
+  }
+
+  .reserva_article {
+    width: 100%;
+    margin-bottom: 2.7rem;
+  }
+
+  .reserva_articleImage {
+    height: 210px;
+  }
+
+  .reserva_articleTitle {
+    padding-block: 0.6rem;
+  }
+
+  .reserva_articleText {
+    padding: 0 0 0 0;
+  }
+  /*#endregion */
+
+  /*#region EXTRAS */
+  .extras {
+    margin-block: 2.4rem;
+    flex-direction: column;
+  }
+
+  .extras_title {
+    margin-bottom: 2.4rem;
+    font-size: 1.8em;
+  }
+
+  .extras_section {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+  }
+
+  .extras_article {
+    width: 100%;
+    display: flex;
+  }
+
+  .extras_article div {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  .extras_image {
+    width: 45%;
+  }
+  /*#endregion */
+
+  /*#region CUATRO_DESTINOS */
+  .cuatroDestinos {
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    row-gap: 36px;
+  }
+
+  .cuatroDestinos_title {
+    text-align: left;
+    padding-left: 9%;
+  }
+
+  .cuatroDestinos_art {
+    max-width: 24%;
+    min-width: 330px;
+  }
+
+  .cuatroDestinos_artImage {
+    width: 100%;
+    height: 480px;
+    object-fit: cover;
+    border-radius: 15px;
+    border: 1px solid gainsboro;
+  }
+
+  .cuatroDestinos_artText {
+    position: absolute;
+    font-size: 2.4em;
+    font-weight: 600;
+    bottom: 21px;
+    left: 9px;
+    color: white;
+    -webkit-text-stroke: 2px #121212;
+    cursor: default;
+  }
+  /*#endregion */
+
+  /*#region TABLE_FLY */
+  .tableFly_seleccionar {
+    width: 72%;
+  }
+
+  .tableFly_seleccionar:hover {
+    width: 81%;
+  }
+  /*#endregion */
+
+  /*#region TICKET */
+  .ticket {
+    width: 100%;
+  }
+
+  .ticket_logo {
+    width: 90px;
+  }
+
+  .ticket_bottom p {
+    font-size: 11px;
+  }
+
+  .ticket_or p {
+    width: 150px;
+    padding-inline: 36px;
+    font-size: 18px;
+  }
+  /*#endregion */
+}
